@@ -1,0 +1,13 @@
+{
+  "type": "model",
+  "authority-id": "6kJEs3UpGoyF4afEkKftSvqt8ZiQ2Sqn",
+  "brand-id": "6kJEs3UpGoyF4afEkKftSvqt8ZiQ2Sqn",
+  "series": "16",
+  "model": "olimex-lime2",
+  "architecture": "armhf",
+  "gadget": "altran-olimex-gadget",
+  "kernel": "altran-olimex-kernel",
+  "timestamp": "2019-08-29T07:42:36+00:00",
+  "required-snaps": ["hello-world"]
+}
+

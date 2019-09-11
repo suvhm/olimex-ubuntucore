@@ -1,0 +1,35 @@
+--- ../../Documents/u-boot/include/configs/sunxi-common.h	2019-08-27 12:46:01.723340752 +0530
++++ ../../local_uboot/u-boot/include/configs/sunxi-common.h	2019-08-27 12:26:12.199351583 +0530
+@@ -143,6 +143,12 @@
+ #define CONFIG_MMC_SUNXI
+ #define CONFIG_MMC_SUNXI_SLOT		0
+ #define CONFIG_ENV_IS_IN_MMC
++#undef CONFIG_ENV_IS_IN_MMC 
++#define CONFIG_ENV_IS_IN_FAT
++#define FAT_ENV_INTERFACE "mmc"
++#define FAT_ENV_DEVICE_AND_PART "0:1"
++#define FAT_ENV_FILE "uboot.env"
++#define CONFIG_SYS_REDUNDAND_ENVIRONMENT
+ #define CONFIG_SYS_MMC_ENV_DEV		0	/* first detected MMC controller */
+ #endif
+ 
+@@ -177,15 +183,17 @@
+ 
+ #define CONFIG_ENV_OFFSET		(544 << 10) /* (8 + 24 + 512) KiB */
+ #define CONFIG_ENV_SIZE			(128 << 10)	/* 128 KiB */
+-
++#undef CONFIG_ENV_SIZE                 (128 << 10)     /* 128 KiB */
++#define CONFIG_ENV_SIZE                (128 * 1024)
+ #define CONFIG_FAT_WRITE	/* enable write access */
++#define CONFIG_SUPPORT_RAW_INITRD
+ 
+ #define CONFIG_SPL_FRAMEWORK
+ #define CONFIG_SPL_LIBCOMMON_SUPPORT
+ #define CONFIG_SPL_SERIAL_SUPPORT
+ #define CONFIG_SPL_LIBGENERIC_SUPPORT
+ 
+-#define CONFIG_SPL_BOARD_LOAD_IMAGE
++define CONFIG_SPL_BOARD_LOAD_IMAGE
+ 
+ #define CONFIG_SPL_TEXT_BASE		0x20		/* sram start+header */
+ #define CONFIG_SPL_MAX_SIZE		0x5fe0		/* 24KB on sun4i/sun7i */

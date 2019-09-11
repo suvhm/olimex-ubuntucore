@@ -1,0 +1,23 @@
+type: model
+authority-id: 6kJEs3UpGoyF4afEkKftSvqt8ZiQ2Sqn
+series: 16
+brand-id: 6kJEs3UpGoyF4afEkKftSvqt8ZiQ2Sqn
+model: olimex-lime2
+architecture: armhf
+gadget: altran-olimex-gadget
+kernel: altran-olimex-kernel
+required-snaps:
+  - hello-world
+timestamp: 2019-08-29T07:42:36+00:00
+sign-key-sha3-384: ax6PeOshBDObY1eW-WFongxefDiyWN9LVyrF8MOct4_MvQxCJ7UQIHNXvoYTpWK1
+
+AcLBcwQAAQoAHRYhBMd/FXvdPFcAxD1oHL5d2/QHMM51BQJdZ4LyAAoJEL5d2/QHMM51BHkP/3Yp
+i0uF2roFwwFEWCnArQAwz3ygvWmASiJ9SE4SWG8zEB4cYBPbJnzMC0eryxX/6j5b1Nt2pJvok9RG
+zQMJNbCPLGy2QFbE7Di79SQQgK+445S1zJNWHugqBfE5KVxFsudybzulRLuf9N96l6JvGxEaRj8V
+foW1UHhPJelRhafrNvbD0HlB3IrG+zMP2h0Cr+gJ/cRibKAc2BYOdybyph5ki9h+gXj0sc6YS8VH
+6e1Ew0wSqUybKx0Zz3w+VLZCa63ZQRVhF+OY1Q8fR1Q2Wh30LizlTQfnRAWqfWq0slTD2BCObbll
+i0PHwf3rT8xIdaswgEVgdd6YOSVB0SxeDSCNXmYkN8+Fv0loHfiRjJGCKY3X4Uhv9l6gf4QUbW0E
+DhmlIKq8/twV58M0ayjtn5gDeKigmuwVitIeADQ+Q/8T7y5B3fMYaQvEwdFC2z8wOk0HGfloDM2G
+bUJitEay9f0OwWf/HN5iKyzB5x8Bbu2vaJ5mF6C87J79mNI4DUYml55z3VLvbN1+h29u2lKPMzuX
+ovE/OwKmutCForWXe9PLESI9lP7QueEn8TFE5dNqvCrRMEZwG+HrRvAzp7/gVM9qP5bFvrxrPT/M
+LnCGMK2b/5+mbcxbEP1h+aV69/UEOuMmXtfUSqA4WGiH7dUZe/UbLH4aUordi/BSX0bkiXgu

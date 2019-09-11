@@ -1,0 +1,20 @@
+diff --git a/include/configs/sunxi-common.h b/include/configs/sunxi-common.h
+index 64a1900..d9cc396 100644
+--- a/include/configs/sunxi-common.h
++++ b/include/configs/sunxi-common.h
+@@ -149,8 +149,15 @@
+ #define CONFIG_SYS_MMC_MAX_DEVICE	4
+ #elif defined(CONFIG_ENV_IS_NOWHERE)
+ #define CONFIG_ENV_SIZE			(128 << 10)
++#elif defined(CONFIG_ENV_IS_IN_FAT)
++#undef  CONFIG_ENV_SIZE
++#define CONFIG_ENV_SIZE			(128 * 1024)
++#define FAT_ENV_DEVICE_AND_PART         "0:1"
++#define FAT_ENV_INTERFACE               "mmc"
++#define FAT_ENV_FILE                    "uboot.env"
++#define CONFIG_SYS_REDUNDAND_ENVIRONMENT
+ #endif
+ 
+ #ifndef CONFIG_MACH_SUN8I_V3S
+ /* 64MB of malloc() pool */
+ #define CONFIG_SYS_MALLOC_LEN		(CONFIG_ENV_SIZE + (64 << 20))
